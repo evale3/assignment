@@ -29,28 +29,9 @@ First, we load each input image as a [512,512,1] array and melt it into a [26214
 
 For example, image 20 had wavelength 590, which is represented by RGB values R=0.972, G=0.762, B=0.000 (or R=248, G=194, B=0 on 0-255 scale). Multiplying its intensity with each color, we eliminate blue from the image and are left with a yellowish hue. 
 
-![Original](Other\img20.png)![Colored](Other\img20_col.png)
+<div class="figure" style="text-align: center">
+<img src="C:/Users/Eva/Documents/assignment/Other/img20.png" alt="Image 20, original and colored" width="49%" height="20%" /><img src="C:/Users/Eva/Documents/assignment/Other/img20_col.png" alt="Image 20, original and colored" width="49%" height="20%" />
+<p class="caption">Image 20, original and colored</p>
+</div>
 
 
-
-```r
-summary(cars)
-```
-
-```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-![](README_files/figure-html/pressure-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
