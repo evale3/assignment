@@ -3,6 +3,7 @@ library(bmp)
 library(reshape)
 library(dplyr)
 library(tidyverse)
+library(packrat)
 
 # input image wavelengths
 colors <- seq(400,700,10) 
@@ -46,7 +47,7 @@ for (i in 1:31) {
   input[[paste0("img_",i)]] <- rgbimg[,4]
 }
 
-# get target image in fancy RGB
+# get target image in RGB
 target <- read.bmp(paste0(path,"sponges_RGB.bmp")) #returns y,x,RGB
 tarimg <- as.raster(target, max = 255)
 plot(1:512, type='n')
@@ -70,6 +71,7 @@ pred <- predict(model1, df) %>% replace(., .<0, 0) %>% replace(., .>1, 1)
 
 # make a 3D array for rastering
 dim(pred) <- c(512,512,3)
+plot(1:512, type='n')
 rasterImage(pred,1,1,512,512)     # prediction (linear regression)
 rasterImage(tarimg ,1,1,512,512)  # actual
 
@@ -95,5 +97,6 @@ pred2 <- pred2 %>% replace(., .<0, 0) %>% replace(., .>1, 1)
 
 # make a 3D array for rastering
 dim(pred2) <- c(512,512,3)
+plot(1:512, type='n')
 rasterImage(pred2,1,1,512,512)    # prediction (CatBoost)
 rasterImage(tarimg ,1,1,512,512)  # actual
