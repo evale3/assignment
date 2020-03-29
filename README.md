@@ -3,6 +3,7 @@ title: "Homework assignment"
 output: 
   html_document: 
     keep_md: yes
+    preserve_yaml: false
 ---
 
 ## Contents 
@@ -10,6 +11,8 @@ output:
 This document contains a description of the assignment solution, which generates the given target image by combining 31 multispectral images.
 
 The repository also contains the relevant R code ([assignment_code.R](assignment%20code.R)) and a folder with the input images ([Data/](Data)).
+
+Libraries can be reinstalled using `renv::restore()` from [renv](https://github.com/rstudio/renv) package.
 
 
 ## Description of solution
@@ -221,27 +224,27 @@ model2 <- catboost.train(train_pool,  NULL,
 
 ```
 ## Learning rate set to 0.434556
-## 0:	learn: 0.6353386	total: 697ms	remaining: 2m 18s
-## 10:	learn: 0.9933522	total: 4.55s	remaining: 1m 18s
-## 20:	learn: 0.9968976	total: 8.42s	remaining: 1m 11s
-## 30:	learn: 0.9979444	total: 12.6s	remaining: 1m 8s
-## 40:	learn: 0.9984123	total: 15.4s	remaining: 59.6s
-## 50:	learn: 0.9987446	total: 19.3s	remaining: 56.3s
-## 60:	learn: 0.9989681	total: 23s	remaining: 52.3s
-## 70:	learn: 0.9991077	total: 26.3s	remaining: 47.7s
-## 80:	learn: 0.9992286	total: 30.4s	remaining: 44.6s
+## 0:	learn: 0.6353386	total: 449ms	remaining: 1m 29s
+## 10:	learn: 0.9933522	total: 4.48s	remaining: 1m 16s
+## 20:	learn: 0.9968976	total: 7.39s	remaining: 1m 2s
+## 30:	learn: 0.9979444	total: 11.1s	remaining: 1m
+## 40:	learn: 0.9984123	total: 14.9s	remaining: 57.9s
+## 50:	learn: 0.9987446	total: 18.6s	remaining: 54.4s
+## 60:	learn: 0.9989681	total: 22s	remaining: 50.2s
+## 70:	learn: 0.9991077	total: 26s	remaining: 47.2s
+## 80:	learn: 0.9992286	total: 30.4s	remaining: 44.7s
 ## 90:	learn: 0.9993305	total: 33.9s	remaining: 40.6s
 ## 100:	learn: 0.9994011	total: 37.4s	remaining: 36.7s
-## 110:	learn: 0.9994593	total: 41.9s	remaining: 33.6s
-## 120:	learn: 0.9995041	total: 46.2s	remaining: 30.2s
-## 130:	learn: 0.9995412	total: 50.4s	remaining: 26.6s
-## 140:	learn: 0.9995735	total: 54.5s	remaining: 22.8s
-## 150:	learn: 0.9996007	total: 58.5s	remaining: 19s
-## 160:	learn: 0.9996248	total: 1m 2s	remaining: 15s
-## 170:	learn: 0.9996456	total: 1m 5s	remaining: 11.2s
-## 180:	learn: 0.9996660	total: 1m 9s	remaining: 7.29s
-## 190:	learn: 0.9996815	total: 1m 13s	remaining: 3.48s
-## 199:	learn: 0.9996989	total: 1m 17s	remaining: 0us
+## 110:	learn: 0.9994593	total: 40.7s	remaining: 32.6s
+## 120:	learn: 0.9995041	total: 43.9s	remaining: 28.7s
+## 130:	learn: 0.9995412	total: 47.2s	remaining: 24.9s
+## 140:	learn: 0.9995735	total: 50.4s	remaining: 21.1s
+## 150:	learn: 0.9996007	total: 54.1s	remaining: 17.6s
+## 160:	learn: 0.9996248	total: 57.7s	remaining: 14s
+## 170:	learn: 0.9996456	total: 1m 1s	remaining: 10.4s
+## 180:	learn: 0.9996660	total: 1m 4s	remaining: 6.79s
+## 190:	learn: 0.9996815	total: 1m 8s	remaining: 3.23s
+## 199:	learn: 0.9996989	total: 1m 12s	remaining: 0us
 ```
 
 ```r
