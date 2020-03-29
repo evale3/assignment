@@ -52,7 +52,7 @@ tarimg <- as.raster(target, max = 255)
 plot(1:512, type='n')
 rasterImage(tarimg,1,1,512,512)
 
-# put target into long format, standardize RGB values to make it compatible with input images
+# put target into long format, standardize 0-255 RGB values into 0-1 to make it compatible with input images
 target1 <- melt(target) 
 target <- target1$value/255
 
