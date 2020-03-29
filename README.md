@@ -29,9 +29,6 @@ First, we load each input image as a [512,512,1] array and melt it into a [26214
 
 For example, image 20 had wavelength 590, which is represented by RGB values R=0.972, G=0.762, B=0.000 (or R=248, G=194, B=0 on 0-255 scale). Multiplying its intensity with each color, we eliminate blue from the image and are left with a yellowish hue. 
 
-<div class="figure" style="text-align: center">
-<img src="C:/Users/Eva/Documents/assignment/Other/img20.png" alt="Image 20, original and colored" width="49%" height="20%" /><img src="C:/Users/Eva/Documents/assignment/Other/img20_col.png" alt="Image 20, original and colored" width="49%" height="20%" />
-<p class="caption">Image 20, original and colored</p>
-</div>
 
 
+[](/Other/img20.png)
