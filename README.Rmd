@@ -1,13 +1,6 @@
 ---
 title: "Homework assignment"
-output: 
-  html_document: 
-    keep_md: yes
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Contents 
 
@@ -31,8 +24,5 @@ First, we load each input image as a [512,512,1] array and melt it into a [26214
 
 For example, image 20 had wavelength 590, which is represented by RGB values R=0.972, G=0.762, B=0.000 (or R=248, G=194, B=0 on 0-255 scale). Multiplying its intensity with each color, we eliminate blue from the image and are left with a yellowish hue. 
 
-```{r img20, echo=FALSE, fig.cap=c("Image 20, original and colored"),out.width="49%", out.height="20%",fig.show='hold',fig.align='center'}
-knitr::include_graphics(c(path.expand("~/assignment/Other/img20.png"),path.expand("~/assignment/Other/img20_col.png"))) 
-```
-
-
+Image 20, original and coloured:
+![](Other/img20.png) ![](Other/img20_col.png)
