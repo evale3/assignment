@@ -29,7 +29,7 @@ input <- merge(seq(1:512), seq(1:512)) %>% merge(.,c('R','G','B'),by = NULL)
 colnames(input) <- c('x','y','RGB')
 
 # load input images
-path <- "C:\\Users\\Eva\\Downloads\\homework (1)\\"
+path <- "~\\assignment\\Data\\"
 
 for (i in 1:31) {
   # read image colors between [0,1], transform into long format for matrix multiplication
