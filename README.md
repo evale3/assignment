@@ -5,8 +5,6 @@ output:
     keep_md: yes
 ---
 
-
-
 ## Contents 
 
 This document contains a description of the assignment solution, which generates the given target image by combining 31 multispectral images.
@@ -31,4 +29,4 @@ For example, image 20 had wavelength 590, which is represented by RGB values R=0
 
 
 
-[](/Other/img20.png)
+![](Other/img20.png)
