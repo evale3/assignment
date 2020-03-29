@@ -9,7 +9,7 @@ output:
 
 This document contains a description of the assignment solution, which generates the given target image by combining 31 multispectral images.
 
-The repository also contains the relevant R code (["assignment_code.R"](assignment_code.R)) and a folder with the input images ("Data").
+The repository also contains the relevant R code (["assignment_code.R"](assignment%20code.R)) and a folder with the input images ("Data").
 
 ## Description of solution
 
